@@ -21,7 +21,7 @@ export const MainNavigation = () => {
                             <ul className="flex items-center gap-4">
                                 <li>
                                     <Link href={"/sign-in"}>
-                                        <Button variant="link">Sign In</Button>
+                                        <Button variant="ghost">Sign In</Button>
                                     </Link>
                                 </li>
                                 <li>

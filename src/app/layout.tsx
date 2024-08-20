@@ -5,6 +5,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { ThemeProvider } from "@/context/theme-provider";
 import { MainNavigation } from "@/components/layout/main-navigation";
 import { Background } from "@/components/common/Background";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,11 +29,14 @@ export default function RootLayout({
                         enableSystem
                         disableTransitionOnChange
                     >
-                      <Background />
-                        <header>
-                            <MainNavigation />
-                        </header>
-                        {children}
+                        <ScrollArea className="h-screen">
+                            <Background />
+                            <header>
+                                <MainNavigation />
+                            </header>
+                            {children}
+                            <footer className="my-20"></footer>
+                        </ScrollArea>
                     </ThemeProvider>
                 </body>
             </html>
