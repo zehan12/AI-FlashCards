@@ -7,7 +7,7 @@ import { MainNavigation } from "@/components/layout/main-navigation";
 import { Background } from "@/components/common/Background";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["greek-ext"] });
 
 export const metadata: Metadata = {
     title: "Create Next App",

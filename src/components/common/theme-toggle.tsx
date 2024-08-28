@@ -36,9 +36,9 @@ export const ThemeToggle = () => {
                     key={isDark.toString()}
                 >
                     {isDark ? (
-                        <CloudMoon className="text-[1.2rem]" />
-                    ) : (
                         <Sun className="text-[1.2rem]" />
+                    ) : (
+                        <CloudMoon className="text-[1.2rem]" />
                     )}
                 </motion.span>
             </AnimatePresence>
